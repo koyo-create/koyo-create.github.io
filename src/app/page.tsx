@@ -19,6 +19,8 @@ export default function Home() {
         資産形成について</main>
         <div className="md:w-1/2 lg:max-w-lg"><img src="./img/main.jpeg" /></div>
         </div>
+        <p className="text-center text-3xl font-bold">今すぐにでも始めるべきNISA制度</p>
+        <p className="text-center text-xl mt-5">初心でも始めやすいNISAを活用した資産形成とは</p>
       </section>
     <Menu />
       
