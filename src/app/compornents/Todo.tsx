@@ -1,6 +1,6 @@
 "use client";
 
-import { deleteTodo, editTodo } from "../../api";
+import { deleteTodo, editTodo } from "../../pages/api/api";
 import React, { useEffect, useRef, useState } from "react";
 import { Task } from "../../types";
 

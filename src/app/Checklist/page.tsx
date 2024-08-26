@@ -1,7 +1,7 @@
 import { AddTask } from "../compornents/AddTask"
 import Header from "../compornents/Header"
 import { TodoList } from "../compornents/TodoList"
-import { getAllTodos } from "../../api";
+import { getAllTodos } from "../../pages/api/api";
 
 export default async function Home() {
   const todos = await getAllTodos();
