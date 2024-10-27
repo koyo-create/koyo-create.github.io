@@ -1,3 +1,4 @@
+'use client'
 import Header from "../compornents/Header"
 import Link from "next/link";
 

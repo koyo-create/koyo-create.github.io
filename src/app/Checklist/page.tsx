@@ -1,3 +1,4 @@
+'use client'
 import { AddTask } from "../compornents/AddTask"
 import Header from "../compornents/Header"
 import { TodoList } from "../compornents/TodoList"
