@@ -10,7 +10,7 @@ import { useEffect } from "react";
 export default function Home() {
   const [user] = useAuthState(auth);
   const router = useRouter();
-  const userSession = null;
+  let userSession = null;
   
   useEffect(() => {
     if(typeof window !== 'undefined') {
