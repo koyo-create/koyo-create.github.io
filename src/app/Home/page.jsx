@@ -5,17 +5,24 @@ import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from "../firebase/firebase";
 import { useRouter } from "next/navigation";
 import { signOut } from "firebase/auth";
+import { useEffect } from "react";
 
 export default function Home() {
   const [user] = useAuthState(auth);
   const router = useRouter();
-  const userSession = sessionStorage.getItem('user');
+  const userSession = null;
+  
+  useEffect(() => {
+    if(typeof window !== 'undefined') {
+      userSession = sessionStorage.getItem('user');
+    
+      if (!user && !userSession) {
+        router.push('/')
+      }
+    }
+  },[user, router])
 
   console.log({ user })
-
-  if (!user && !userSession) {
-    router.push('/')
-  }
 
   return (
     <>
