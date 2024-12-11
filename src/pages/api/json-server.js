@@ -1,24 +1,4 @@
-// const jsonServer = require('json-server');
-// const server = jsonServer.create();
-// const router = jsonServer.router('db.json'); // db.jsonを指定
-// const middlewares = jsonServer.defaults();
 
-// server.use(middlewares);
-// server.use(router);
-
-// module.exports = server;
-// import jsonServer from 'json-server';
-
-// const server = jsonServer.create();
-// const router = jsonServer.router('db.json'); // プロジェクトのルートにdb.jsonを置く
-// const middlewares = jsonServer.defaults();
-
-// server.use(middlewares);
-// server.use(router);
-
-// export default (req, res) => {
-//   server.emit('request', req, res);
-// };
 import fs from 'fs';
 import path from 'path';
 
