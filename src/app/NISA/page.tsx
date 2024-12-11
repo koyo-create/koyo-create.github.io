@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link";
 import Header from "../compornents/Header";
+import Image from "next/image";
 
 export default function NISA() {
   return (
@@ -23,7 +24,13 @@ export default function NISA() {
               NISA口座で投資した金融商品から得られる利益は非課税になるため世間で話題となっています。
             </p>
             <div className="container mx-auto max-w-4xl ">
-            <img src="./img/運用益非課税画像.jpg" />
+            <Image
+                src="/img/運用益非課税画像.jpg"
+                alt="運用益非課税画像"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
             <p className="mt-4"><Link href="https://www.fsa.go.jp/policy/nisa2/know/index.html">引用元: 金融庁 </Link></p>
             </div>
           </div>
@@ -38,7 +45,13 @@ export default function NISA() {
               <br/>
               最大１８００万円まで投資することが可能です。</p>
           <div className="container mx-auto max-w-2xl my-10">
-            <img src="./img/NISAについて.png" />
+            <Image
+                src="/img/NISAについて.png"
+                alt="NISAについて"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
             <p className="mt-4"><Link href="https://www.fsa.go.jp/policy/nisa2/know/index.html">引用元: 金融庁 </Link></p>
             </div>
           </div>
@@ -63,7 +76,13 @@ export default function NISA() {
           </p>
           </div>
           <div className="container mx-auto max-w-2xl my-10">
-            <img src="./img/NISA画像.jpg" />
+            <Image
+                src="/img/NISA画像.jpg"
+                alt="NISAについて"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
           </div>
         </div>
       </section>

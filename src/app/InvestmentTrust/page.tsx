@@ -1,6 +1,8 @@
 'use client'
 import Link from "next/link";
 import Header from "../compornents/Header";
+import Image from "next/image";
+
 
 export default function InvestmentTrust() {
   return (
@@ -23,7 +25,13 @@ export default function InvestmentTrust() {
               様々な銘柄に投資することで分散投資にもなり安定した資産運用ができます。
             </p>
             <div className="container mx-auto max-w-lg ">
-              <img src="./img/投資信託について.avif" />
+              <Image
+                src="/img/投資信託について.avif"
+                alt="投資信託の仕組み"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
               <p className="mt-4">
                 <Link href="https://www.nikkei.com/article/DGXZQOUB17A4Y0X10C23A4000000/">
                   引用元: 日本経済新聞
@@ -50,7 +58,13 @@ export default function InvestmentTrust() {
               2位は「オールカントリー」全世界の株式に投資ができる投資信託となっています。
             </p>
             <div className="container mx-auto max-w-3xl ">
-              <img src="./img/投資信託ランキング.png" />
+              <Image
+                src="/img/投資信託ランキング.png"
+                alt="投資信託購入ランキング"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
               <p className="mt-4">
                 <Link href="https://www.rakuten-sec.co.jp/web/fund/find/ranking/ranking.html?term=m&target=all&age=all&x=71&y=12&type=500034&freqid=3&tget=1&group=all">
                   引用元: 楽天証券
@@ -68,7 +82,13 @@ export default function InvestmentTrust() {
               今後もアメリカの企業が伸びていくと思う人向けの投資信託です。
             </p>
             <div className="container mx-auto max-w-3xl ">
-              <img src="./img/S&P500構成銘柄.png" />
+              <Image
+                src="/img/S&P500構成銘柄.png"
+                alt="S&P500構成銘柄"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
               <p className="mt-4">
                 <Link href="https://www.am.mufg.jp/pdf/koumokuromi/253266/253266_20240725.pdf?_gl=1*9b237i*_gcl_au*ODA2ODM2MTkxLjE3MTk4NDA3NTE.*_ga*MjExOTIyOTEzNC4xNzE5ODQwNzUx*_ga_3ZNV996Y9H*MTcyMzAzMzI1OC4zLjEuMTcyMzAzMzI4Ni4zMi4wLjA.&_fsi=jzWXfSEh">
                   引用元: 三菱UFJアセットマネジメント
@@ -86,7 +106,13 @@ export default function InvestmentTrust() {
               アメリカだけでなく日本などの先進国にも分散投資したい人向けの投資信託です。
             </p>
             <div className="container mx-auto max-w-2xl ">
-              <img src="./img/全世界株式投資比率.png" />
+              <Image
+                src="/img/全世界株式投資比率.png"
+                alt="全世界株式投資比率"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
               <p className="mt-4">
                 <Link href="https://www.am.mufg.jp/pdf/koumokuromi/253425/253425_20240725.pdf?_gl=1*66mhtr*_gcl_au*ODA2ODM2MTkxLjE3MTk4NDA3NTE.*_ga*MjExOTIyOTEzNC4xNzE5ODQwNzUx*_ga_3ZNV996Y9H*MTcyMzA2NjQxOC40LjEuMTcyMzA2NjQ0OC4zMC4wLjA.&_fsi=jzWXfSEh">
                   引用元: 三菱UFJアセットマネジメント
@@ -124,7 +150,13 @@ export default function InvestmentTrust() {
               ２０年で４倍、３０年で８倍、４０年で１６倍となります。
             </p>
             <div className="container mx-auto max-w-xl ">
-              <img src="./img/複利計算.png" />
+              <Image
+                src="/img/複利計算.png"
+                alt="複利計算シュミレーション"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
               <p className="mt-4">
                 <Link href="https://www.am-one.co.jp/shisankeisei/simulation.html">
                   引用元:資産運用かんたんシミュレーション

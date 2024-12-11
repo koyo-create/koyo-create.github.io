@@ -1,6 +1,8 @@
 'use client'
 import Header from "../compornents/Header"
 import Link from "next/link";
+import Image from "next/image";
+
 
 
 export default function Securitiescompany() {
@@ -27,8 +29,14 @@ export default function Securitiescompany() {
               <br />
               また、手数料もネット証券の方が安く、100円から投資することも可能です。
             </p>
-            <div className="container mx-auto max-w-3xl ">
-            <img src="./img/証券会社　投資信託取扱一覧.png" />
+            <div className="container mx-auto max-w-3xl">
+            <Image
+                src="/img/証券会社　投資信託取扱一覧.png"
+                alt="投資信託取扱一覧"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
             <p className="mt-4"><Link href="https://www.tsumitatenisa.jp/contents/nn010.html">引用元: 新NISAナビ </Link></p>
             <div  className="my-10 text-xl">
             <p>
