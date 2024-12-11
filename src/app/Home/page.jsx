@@ -1,22 +1,26 @@
-'use client'
+'use client';
 import Header from "../compornents/Header";
 import Menu from "../compornents/Menu";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase/config";
 import { useRouter } from "next/navigation";
 import { signOut } from "firebase/auth";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [user] = useAuthState(auth);
   const router = useRouter();
-  const userSession = sessionStorage.getItem("user");
+  const [userSession,setUserSession] = useState(null);
 
   useEffect(() => {
-    if (!user && !userSession) {
+    // クライアントサイドでのみ実行
+    const session = sessionStorage.getItem("user");
+    setUserSession(session);
+    if (!user && !session) {
       router.push("/");
     }
-  }, [user, userSession, router]);
+  }, [user, router]);
 
   const handleLogout = async () => {
     try {
@@ -54,7 +58,13 @@ export default function Home() {
               資産形成について
             </main>
             <div className="md:w-1/2 lg:max-w-lg">
-              <img src="./img/main.jpeg" />
+              <Image
+                src="/img/main.jpeg"
+                alt="HOME画像"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
             </div>
           </div>
           <p className="text-center text-3xl font-bold">今すぐにでも始めるべきNISA制度</p>
